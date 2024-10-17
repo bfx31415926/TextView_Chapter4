@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/captionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="TextView(Глава 4)"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/spannableTextViewCaptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spannable TextView (Секция 4.1)"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captionTV" />
+
+    <TextView
+        android:id="@+id/spannableTextColorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines = "2"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spannableTextViewCaptionTV" />
+
+    <TextView
+        android:id="@+id/spannableColorCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003C==Spannable Color"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/spannableTextColorTV"
+        app:layout_constraintTop_toTopOf="@+id/spannableTextColorTV" />
+
+    <TextView
+        android:id="@+id/spannableFontTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spannableTextColorTV" />
+
+    <TextView
+        android:id="@+id/spannableFontCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003C==Spannable Font"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/spannableFontTV"
+        app:layout_constraintTop_toTopOf="@+id/spannableFontTV" />
+
+    <TextView
+        android:id="@+id/spannableTypeFaceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines = "2"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spannableFontTV" />
+
+    <TextView
+        android:id="@+id/spannableTypeFaceCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003C==Spannable typeface"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/spannableTypeFaceTV"
+        app:layout_constraintTop_toTopOf="@+id/spannableTypeFaceTV" />
+
+    <TextView
+        android:id="@+id/strikethroughEntireTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spannableTypeFaceTV" />
+
+    <TextView
+        android:id="@+id/strikethroughEntireTextCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003C==Strikethrough the entire Text"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/strikethroughEntireTextTV"
+        app:layout_constraintTop_toTopOf="@+id/strikethroughEntireTextTV" />
+
+    <TextView
+        android:id="@+id/strikeThroughOnlyPartsOfTextTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strikethroughEntireTextTV" />
+
+    <TextView
+        android:id="@+id/strikeThroughOnlyPartsOfTextCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u003C==Strike only parts of Text"
+        android:textStyle="italic"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/strikeThroughOnlyPartsOfTextTV"
+        app:layout_constraintTop_toTopOf="@+id/strikeThroughOnlyPartsOfTextTV" />
+
+    <TextView
+        android:id="@+id/withImageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:text="Hello world"
+        android:drawableLeft="@drawable/sample1"
+        android:drawableRight="@drawable/sample1"
+        android:drawableTop="@drawable/sample1"
+        android:drawableBottom="@drawable/sample1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strikeThroughOnlyPartsOfTextTV" />
+
+    <TextView
+        android:id="@+id/withImageCommentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="\u003C==TextView with image"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/withImageTV"
+        app:layout_constraintStart_toEndOf="@+id/withImageTV"
+        app:layout_constraintTop_toTopOf="@+id/withImageTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--        android:textColor="@color/blue"-->
